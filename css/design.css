@@ -1,0 +1,18 @@
+/* design.css */
+
+body { background: #000; color: #ccc; font-size: 12pt; font-family: sans-serif; }
+
+/* sections */
+#heading { position: relative; background: url('http://www.picturesnew.com/media/images/landscape.jpeg'); height: 300px; position: relative; top: -100px; padding-top: 100px; -webkit-transform: skewY(-5deg); }
+#heading .unskew { -webkit-transform: skewY(5deg); }
+#overview { position: relative; background: url('http://www.picturesnew.com/media/images/landscape.jpeg'); height: 300px; position: relative; top: -100px; padding-top: 100px; -webkit-transform: skewY(-5deg); }
+#overview .unskew { -webkit-transform: skewY(5deg); }
+#overview .section-header { position: absolute; top: -110px; right: 20px; }
+#overview aside { width: 46%; float: left; padding: 2%;  }
+#schedule { }
+#registration { }
+#footing { }
+
+/* global styles */
+#container { width: 960px; margin: 0 auto; }
+.section-header { font-size: 200%; }
