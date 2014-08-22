@@ -1,18 +1,26 @@
 /* design.css */
 
-body { background: #000; color: #ccc; font-size: 12pt; font-family: sans-serif; }
+body { background: #000; color: #ccc; font-size: 12pt; font-family: 'Lato', Arial, sans-serif; }
+.skew { -webkit-transform: skewY(-5deg); -moz-transform: skewY(-5deg); -ms-transform: skewY(-5deg); transform: skewY(-5deg); }
+.unskew { -webkit-transform: skewY(5deg); -moz-transform: skewY(5deg); -ms-transform: skewY(5deg); transform: skewY(5deg); }
 
 /* sections */
-#heading { position: relative; background: url('http://www.picturesnew.com/media/images/landscape.jpeg'); height: 300px; position: relative; top: -100px; padding-top: 100px; -webkit-transform: skewY(-5deg); }
-#heading .unskew { -webkit-transform: skewY(5deg); }
-#overview { position: relative; background: url('http://www.picturesnew.com/media/images/landscape.jpeg'); height: 300px; position: relative; top: -100px; padding-top: 100px; -webkit-transform: skewY(-5deg); }
-#overview .unskew { -webkit-transform: skewY(5deg); }
+#heading { position: relative; height: 300px; position: relative; top: -100px; padding-top: 100px; }
+#heading .unskew { background: url('../img/heading.png') #113; background-size: contain; height: 120%; }
+#heading .logo-container { position: relative; top: 75px; }
+#heading .logo { background: url('../img/logo.png') no-repeat; width: 522px; height: 102px; margin: 0 auto; }
+#heading .date { font-family: 'Lato'; font-size: 300%; font-weight: 100; position: relative; top: 20px; text-align: center; }
+#overview { position: relative; background: #555; height: 300px; position: relative; top: -100px; padding-top: 100px; }
 #overview .section-header { position: absolute; top: -110px; right: 20px; }
-#overview aside { width: 46%; float: left; padding: 2%;  }
-#schedule { }
+#overview aside { width: 46%; float: left; padding: 2%; }
+#schedule { position: relative; height: 300px; position: relative; top: -100px; padding-top: 100px; text-align: center; }
+#schedule .heading { font-size: 200%; color: #fff; }
+#schedule aside { max-width: 31%; width: auto; float: left; padding: 1%; }
 #registration { }
 #footing { }
 
 /* global styles */
 #container { width: 960px; margin: 0 auto; }
 .section-header { font-size: 200%; }
+p { padding: 10px; line-height: 1.3em; }
+em { font-style: italic; }
