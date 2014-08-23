@@ -8,7 +8,7 @@ body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Aria
 #heading { height: 300px; }
 #heading .unskew { background: url('../img/heading.png') #113; background-size: contain; }
 #heading .logo-container { position: relative; top: 75px; }
-#heading .logo { background: url('../img/logo.png') no-repeat; background-size: contain; width: 522px; height: 102px; margin: 0 auto; }
+#heading .logo { background: url('../img/logo.png') no-repeat center; background-size: contain; width: 522px; height: 102px; margin: 0 auto; }
 #heading .date { font-family: 'Lato'; font-size: 300%; font-weight: 100; position: relative; top: 20px; text-align: center; }
 #overview { background: #000; border-left: 1px solid #333; border-right: 1px solid #333; }
 #overview p { text-align: justify; }
