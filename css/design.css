@@ -2,13 +2,13 @@
 
 body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Arial, sans-serif; }
 .skew { position: relative; -webkit-transform: skewY(-5deg); -moz-transform: skewY(-5deg); -ms-transform: skewY(-5deg); transform: skewY(-5deg); height: 250px; top: -100px; padding-top: 50px; }
-.unskew { -webkit-transform: skewY(5deg); -moz-transform: skewY(5deg); -ms-transform: skewY(5deg); transform: skewY(5deg); height: 120%; }
+.unskew { -webkit-transform: skewY(5deg); -moz-transform: skewY(5deg); -ms-transform: skewY(5deg); transform: skewY(5deg); min-height: 120%; max-height: 160%; }
 
 /* sections */
 #heading { height: 300px; }
 #heading .unskew { background: url('../img/heading.png') #113; background-size: contain; }
 #heading .logo-container { position: relative; top: 75px; }
-#heading .logo { background: url('../img/logo.png') no-repeat; width: 522px; height: 102px; margin: 0 auto; }
+#heading .logo { background: url('../img/logo.png') no-repeat; background-size: contain; width: 522px; height: 102px; margin: 0 auto; }
 #heading .date { font-family: 'Lato'; font-size: 300%; font-weight: 100; position: relative; top: 20px; text-align: center; }
 #overview { background: #000; border-left: 1px solid #333; border-right: 1px solid #333; }
 #overview p { text-align: justify; }
@@ -22,7 +22,7 @@ body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Aria
 #footing { height: 30px; padding: 25px; text-align: right; }
 
 /* global styles */
-#container { width: 960px; margin: 0 auto; }
+#container { max-width: 960px; margin: 0 auto; }
 .section-header { font-size: 200%; position: absolute; top: 5px; right: 5%; background: #000; padding: 10px; }
 p { padding: 10px; line-height: 1.3em; }
 em, i { font-style: italic; }
@@ -30,3 +30,13 @@ b { font-weight: 700; }
 a { color: #ccc; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .para p { padding: 10px 5%; }
+
+@media screen and (max-width: 640px) {
+  #heading .logo { width: 100%; max-height: 102px; height: auto; min-height: 80px; }
+  .skew { height: 130px !important; }
+  #heading { height: 250px !important; }
+  #overview { height: 330px !important; }
+  #schedule aside { max-width: 100% !important; }
+  #schedule { height: 530px !important; }
+  #footing { height: 0px !important; }
+}
