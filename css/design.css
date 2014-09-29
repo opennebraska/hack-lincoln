@@ -20,7 +20,9 @@ body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Aria
 #schedule b { color: #000; }
 #schedule aside { max-width: 31%; width: auto; float: left; padding: 1%; }
 
-#registration { background: #076c7f; height: 100px; }
+#registration { background: #076c7f; height: 230px; }
+#registration p:first-of-type { text-align: center; }
+.eventbrite { width: 300px; }
 
 #sponsors { background: #638603; height: 100px; }
 
