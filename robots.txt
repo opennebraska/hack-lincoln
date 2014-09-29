@@ -1,0 +1,8 @@
+User-Agent: *
+
+# The Three Laws (h/t to last.fm)
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self
+
+Allow: /
