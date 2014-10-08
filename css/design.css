@@ -24,7 +24,9 @@ body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Aria
 #registration p:first-of-type { text-align: center; }
 .eventbrite { width: 300px; }
 
-#sponsors { background: #638603; height: 100px; }
+#sponsors { background: #000; height: 200px; }
+#sponsors .sponsor-logos { display: table-row; }
+#sponsors .sponsor-cell { display: table-cell; }
 
 #footing { height: 30px; padding: 25px; text-align: right; }
 
@@ -36,7 +38,7 @@ em, i { font-style: italic; }
 b { font-weight: 700; }
 a { color: #ccc; text-decoration: none; }
 a:hover { text-decoration: underline; }
-.para p { padding: 10px 5%; }
+.para p, .sponsor-logos { padding: 10px 5%; }
 
 @media screen and (max-width: 640px) {
 
