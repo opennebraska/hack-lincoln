@@ -51,9 +51,11 @@ a:hover { text-decoration: underline; }
   #schedule aside { max-width: 100% !important; }
   #schedule { height: 630px; }
 
-  #registration { height: 160px; }
+  #registration { height: 280px; }
 
-  #sponsors { height: 130px; }
+  #sponsors { height: 220px; }
+  #sponsors .sponsor-cell { display: inline; }
+  #sponsors .sponsor-cell img { }
 
   #footing { padding: 5%; }
 }
