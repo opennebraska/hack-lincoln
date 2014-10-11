@@ -24,9 +24,9 @@ body { background: #000; color: #fff; font-size: 12pt; font-family: 'Lato', Aria
 #registration p:first-of-type { text-align: center; }
 .eventbrite { width: 300px; }
 
-#sponsors { background: #000; height: 200px; }
-#sponsors .sponsor-logos { display: table-row; }
-#sponsors .sponsor-cell { display: table-cell; }
+#sponsors { background: #000; height: 150px; }
+#sponsors .sponsor-logos { margin: 0 auto; }
+#sponsors .sponsor-cell { display: table-cell; width: 33%; text-align: center; }
 
 #footing { height: 30px; padding: 25px; text-align: right; }
 
